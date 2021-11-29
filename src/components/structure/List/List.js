@@ -10,10 +10,10 @@ const List = () => {
   }, []);
 
   const getVagas = async () => {
-    const response = await Api.fetchGetAll(); // requiscao do tipo GET para api
-    const data = await response.json();
+    const response = await Api.fetchGetAll();
+    console.log(response); // requiscao do tipo GET para api
     // API retorna um array com dados
-    setVagas(data);
+    setVagas(response);
     console.log(vagas); // atualizamos o nosso objeto do estado com o array vindo da api backend
   };
 
@@ -21,10 +21,10 @@ const List = () => {
     <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
       {vagas.map(
         (
-          vaga,
+          id,
           index // iterar o array de vagas e para cada vaga chamar um componente card
         ) => (
-          <Card data={vaga} key={index} />
+          <Card data={id} key={index} />
         )
       )}
     </div>

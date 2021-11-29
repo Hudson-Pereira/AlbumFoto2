@@ -1,6 +1,28 @@
+// import { createClient } from "pexels";
+const API_KEY = "563492ad6f9170000100000102ea52819b4a4035b93d78253511494d";
+const API_URL = "https://api.pexels.com/v1/search?query=natureza/";
+
+// const client = createClient(
+//   "563492ad6f9170000100000102ea52819b4a4035b93d78253511494d"
+// );
+// const query = "Nature";
+
 const Api = {
-  apiUrl: "http://localhost:3001/agua",
-  fetchGetAll: () => fetch(`${Api.apiUrl}/listall`),
+  fetchGetAll: async () => {
+    const data = await fetch(API_URL, {
+      headers: {
+        Authorization: API_KEY,
+      },
+    });
+    const { photos } = await data.json();
+    return photos;
+  },
+  // fetchGetAll: () =>
+  //   fetch(API_URL, {
+  //     headers: {
+  //       Authorization: API_KEY,
+  //     },
+  //   }),
   fetchGetById: (id) => fetch(`${Api.apiUrl}/listid/${id}`),
   fetchPost: (vaga) => {
     return fetch(`${Api.apiUrl}/add`, {

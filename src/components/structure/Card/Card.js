@@ -5,12 +5,12 @@ import "./Card.css";
 const Card = (props) => {
   const vaga = props.data;
   return (
-    <Link to={`/view/${vaga._id}`} className="col">
+    <Link to={`/view/${vaga.id}`} className="col">
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title">{vaga.nome}</h5>
-          <span className="badge bg-primary">{vaga.regiao}</span>
-          <img src={vaga.imagemUrl} />
+          <img src={vaga.src.portrait} alt={vaga.src.portrait} />
+          <h5 className="card-title">{vaga.photographer}</h5>
+          <span className="badge bg-primary">{vaga.photographer_url}</span>
         </div>
       </div>
     </Link>

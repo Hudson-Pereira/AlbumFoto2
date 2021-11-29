@@ -5,7 +5,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="container home">
-      <h1 className="text-center">Listagem Pokemons</h1>
+      <h1 className="text-center">Álbum de fotos</h1>
       <List />
     </div>
   );

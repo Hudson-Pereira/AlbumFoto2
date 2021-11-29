@@ -18,5 +18,8 @@
   flex-wrap: wrap;
 }
 img {
-  width: 50%;
+  border: solid black 2px;
+  border-radius: 100%;
+  width: 60%;
+  height: 60%;
 }
