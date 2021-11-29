@@ -5,7 +5,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary w-100">
       <div className="container">
         <Link to="/" className="navbar-brand">
-          Pokemons
+          Álbum de Fotos
         </Link>
         <button
           className="navbar-toggler"
