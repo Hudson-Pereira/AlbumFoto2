@@ -19,18 +19,7 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/cadastro" className="nav-link">
-                Cadastro
-              </Link>
-            </li>
-          </ul>
+          <ul className="navbar-nav"></ul>
         </div>
       </div>
     </nav>
