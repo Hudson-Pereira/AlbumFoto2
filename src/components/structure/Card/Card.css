@@ -31,3 +31,11 @@ img {
   width: 60%;
   height: 60%;
 }
+
+#span {
+  background-color: #05a081 !important;
+}
+
+a {
+  text-decoration: none;
+}

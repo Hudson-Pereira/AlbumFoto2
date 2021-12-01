@@ -4,7 +4,10 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary w-100">
+    <nav
+      id="nav"
+      className="navbar navbar-expand-lg navbar-dark bg-primary w-100"
+    >
       <div className="container">
         <a href="https://www.pexels.com">
           <img

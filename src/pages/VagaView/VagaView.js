@@ -33,7 +33,7 @@ const VagaView = (props) => {
   };
 
   return (
-    <div className="container flex-grow-1">
+    <div className="container_home flex-grow-1">
       <div className="row">
         <div className="col">
           <img src={vaga.photos} />
