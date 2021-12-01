@@ -19,7 +19,9 @@ const VagaView = (props) => {
   const getVagaById = async () => {
     const response = await Api.fetchGetById(_id);
     const result = await response.json();
+    console.log(result);
     setVaga(result);
+    console.log(vaga);
   };
 
   const handleDelete = async (evento) => {
@@ -34,7 +36,7 @@ const VagaView = (props) => {
     <div className="container flex-grow-1">
       <div className="row">
         <div className="col">
-          <img src={vaga.imagemUrl} />
+          <img src={vaga.photos} />
           <h1 className="text-center mt-4">{vaga.nome}</h1>
           <div className="btn-group mt-3 w-100 d-flex align-items-center justify-content-center">
             <Link to={`/update/${vaga._id}`} className="btn btn-outline-info">

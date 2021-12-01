@@ -23,7 +23,12 @@ const Api = {
   //       Authorization: API_KEY,
   //     },
   //   }),
-  fetchGetById: (id) => fetch(`${Api.apiUrl}/listid/${id}`),
+  fetchGetById: (id) =>
+    fetch(`${API_URL}${id}`, {
+      headers: {
+        Authorization: API_KEY,
+      },
+    }),
   fetchPost: (vaga) => {
     return fetch(`${Api.apiUrl}/add`, {
       method: "POST",
