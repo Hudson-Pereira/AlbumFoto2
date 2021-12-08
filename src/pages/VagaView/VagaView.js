@@ -24,7 +24,7 @@ const VagaView = (props) => {
     <div className="container_home flex-grow-1">
       <div className="row">
         <div className="col" id="img">
-          <img id="gd" src={vaga.src.original} />
+          <img id="gd" src={vaga.src.original} alt={vaga.src.original} />
         </div>
       </div>
     </div>

@@ -27,6 +27,9 @@ const List = () => {
           <Card data={id} key={index} />
         )
       )}
+      <div>
+        <a href={`${vagas.next_page}`}>Proxima</a>
+      </div>
     </div>
   );
 };
