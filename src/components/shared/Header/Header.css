@@ -1,8 +1,15 @@
 #nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: #0be7bb !important;
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #0be7bb;
 }
 
