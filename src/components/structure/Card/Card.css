@@ -38,3 +38,15 @@ img {
 a {
   text-decoration: none;
 }
+#gd {
+  display: flex;
+  border-radius: 0%;
+}
+
+#img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

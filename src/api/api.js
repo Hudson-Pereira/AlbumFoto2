@@ -24,7 +24,7 @@ const Api = {
   //     },
   //   }),
   fetchGetById: (id) =>
-    fetch(`${API_URL}${id}`, {
+    fetch(`https://api.pexels.com/v1/photos/${id}`, {
       headers: {
         Authorization: API_KEY,
       },
