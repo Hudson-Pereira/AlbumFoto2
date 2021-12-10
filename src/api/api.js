@@ -3,7 +3,7 @@ const API_URL = "https://api.pexels.com/v1/";
 
 const Api = {
   fetchGetAll: async () => {
-    const data = await fetch(`${API_URL}curated?page=1&per_page=80`, {
+    const data = await fetch(`${API_URL}curated?page=2&per_page=40`, {
       headers: {
         Authorization: API_KEY,
       },

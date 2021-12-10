@@ -3,22 +3,22 @@ import Card from "../Card/Card";
 import Api from "../../../api/api";
 
 const List = () => {
-  const [vagas, setVagas] = useState([]);
+  const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    getVagas();
+    getPhotos();
   }, []);
 
-  const getVagas = async () => {
+  const getPhotos = async () => {
     const response = await Api.fetchGetAll();
     console.log(response);
-    setVagas(response);
-    console.log(vagas);
+    setPhotos(response);
+    console.log(photos);
   };
 
   return (
     <div className="row row-cols-1 row-cols-md-3 g-4 mt-3">
-      {vagas.map((id, index) => (
+      {photos.map((id, index) => (
         <Card data={id} key={index} />
       ))}
     </div>
