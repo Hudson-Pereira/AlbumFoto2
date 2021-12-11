@@ -1,73 +1,15 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
--------------------------------------------<!-- markdownlint-capture -->
 App de galeria de fotos carregado com API da Pexel
+
+Esse projeto foi criado utilizando apenas o framework REACT. Peguei como base um projeto utilizado em curso, fazendo as alterações necessárias para adaptação e uso com a API do site PEXELS. Para estilização e ajustes visuais foi utilizado CSS externo. Não consegui implementar o recurso lazy load (depois de diversas tentativas e pesquisas, meu projeto bugou todo e não rodou mais, tendo que revisar todo e praticamente refazê-lo, o que me fez desistir de implementar). Para o recurso de paginação, de acordo com a documentação da API, este só está disponível quando os recursos NEXT_PAGE e PREVIOUS_PAGE são baixados juntos dos dados no arquivo JSON recuperado, o que no meu caso não ocorreu, me impossibilitando de implementar a paginação pela API.
+
+Esse álbum de fotos está configurado para retornar ao usuário um total de 40 fotos na página, sendo possível configurar no arquivo API.JS para um mínimo de 15 e máximo de 80 fotos. O recurso utilizado da API foi o CURATED, recurso no qual os editores do site escolhem as fotos que irão aparecer, fazendo com que as imagens mudem aleatóriamente de tempos em tempos, no que eu pude perceber, cada dia aparece um conjunto de imagens diferentes.
+
+A rota utilizada nesse projeto foi a GET, puxando o recurso fetchGetAll() para buscar todas as fotos, de acordo com a configuração.
+
+Em sua estrutura é possível visualizar, além das imagens ao centro, um HEADER e um FOOTER, que estão sendo exportados externamente para a página principal.
+
+######################
+
+Projeto criado por Hudson Oliveira Pereira.
+Desenvolvedor Jr - Back End Java Script.
+Estudante pela Blue EdTech - Módulo 4 (segundo da especialização de back)
